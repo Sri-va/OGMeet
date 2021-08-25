@@ -37,7 +37,7 @@ export class StudentComponent implements OnInit {
   }
 
   downloadFile(): void {
-    const baseUrl = 'http://localhost:9090/downloadFile/1';
+    const baseUrl = 'http://localhost:9090/downloadFile/12';
 
     this._http.get(baseUrl, { responseType: 'blob' }).subscribe((response) => {
       const filename = 'refer.txt';

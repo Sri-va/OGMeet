@@ -8,10 +8,10 @@ import { Student } from './student';
   providedIn: 'root',
 })
 export class LoginService {
-  studentUrl = 'http://localhost:9090/loginStudent';
+  studentUrl = 'http://3.144.112.125:8082/loginStudent';
   instructordata: Observable<Instructor> | any;
   studentdata: Observable<Student> | any;
-  loginInstructorUrl = 'http://localhost:9090/loginTeacher';
+  loginInstructorUrl = 'http://3.144.112.125:8082/loginTeacher';
 
   constructor(private _http: HttpClient) {}
 

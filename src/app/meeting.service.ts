@@ -8,7 +8,7 @@ import { Student } from './student';
   providedIn: 'root',
 })
 export class MeetingService {
-  baseUrl = 'http://localhost:9090/meetingURL';
+  baseUrl = 'hhttp://3.144.112.125:8082/meetingURL';
   // private _obs = new Subject<string>();
   // url$ = this._obs.asObservable();
 

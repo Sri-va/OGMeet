@@ -15,11 +15,11 @@ export class StudentService {
     }),
   };
   GetStudentsByCourse(course: string): Observable<Student> {
-    const baseUrl = `http://localhost:9090/allstudentByCourse/${course}`;
+    const baseUrl = `http://3.144.112.125:8082/allstudentByCourse/${course}`;
     return this._http.get<Student>(baseUrl);
   }
   GetStudentByCourse(course: string): Observable<Student> {
-    const baseUrl = `http://localhost:9090/allstudentByCourse/${course}`;
+    const baseUrl = `http://3.144.112.125:8082/allstudentByCourse/${course}`;
     return this._http.get<Student>(baseUrl);
   }
 }
